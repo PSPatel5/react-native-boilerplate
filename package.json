@@ -1,0 +1,8 @@
+{
+  "name": "pspd-react-native-template",
+  "version": "0.0.1",
+  "description": "React Native Template",
+  "repository": "git@github.com:Parth-Coditas/react-native-boilerplate.git",
+  "author": "Parth Patel <pspatel1068@gmail.com>",
+  "license": "MIT"
+}
