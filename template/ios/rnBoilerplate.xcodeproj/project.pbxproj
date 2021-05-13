@@ -38,6 +38,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnBoilerplate/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnBoilerplate/main.m; sourceTree = "<group>"; };
 		7218F6C421B922DE30EF98C3 /* libPods-rnBoilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnBoilerplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9C260F264D3D3500C648F7 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		7E9C2613264D3D3600C648F7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		7E9C2615264D3D3600C648F7 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		7E9C2616264D3D3600C648F7 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		7E9C2618264D3D3600C648F7 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		7E9C261B264D3D3600C648F7 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		7E9C261C264D3D3600C648F7 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnBoilerplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92B2B6E31239AE05ED09B814 /* Pods-rnBoilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnBoilerplate.debug.xcconfig"; path = "Target Support Files/Pods-rnBoilerplate/Pods-rnBoilerplate.debug.xcconfig"; sourceTree = "<group>"; };
 		9BCE088127E2B5439E7A33FE /* Pods-rnBoilerplate-rnBoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnBoilerplate-rnBoilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-rnBoilerplate-rnBoilerplateTests/Pods-rnBoilerplate-rnBoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 		13B07FAE1A68108700A75B9A /* rnBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				7E9C260E264D383900C648F7 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -104,6 +112,20 @@
 				AE0702E5BFBC5509AEC749F3 /* libPods-rnBoilerplate-rnBoilerplateTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E9C260E264D383900C648F7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7E9C2618264D3D3600C648F7 /* AntDesign.ttf */,
+				7E9C260F264D3D3500C648F7 /* EvilIcons.ttf */,
+				7E9C2615264D3D3600C648F7 /* FontAwesome.ttf */,
+				7E9C261B264D3D3600C648F7 /* FontAwesome5_Brands.ttf */,
+				7E9C261C264D3D3600C648F7 /* Ionicons.ttf */,
+				7E9C2613264D3D3600C648F7 /* MaterialCommunityIcons.ttf */,
+				7E9C2616264D3D3600C648F7 /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -145,7 +167,6 @@
 				9BCE088127E2B5439E7A33FE /* Pods-rnBoilerplate-rnBoilerplateTests.debug.xcconfig */,
 				FA1E6E32E20FD514A245CDC6 /* Pods-rnBoilerplate-rnBoilerplateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
