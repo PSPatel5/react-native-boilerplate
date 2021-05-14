@@ -1,7 +1,7 @@
-import {If} from 'components/If/If';
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
-import {normalize} from 'themes/Metrics';
+import { View, StyleSheet, Text } from 'react-native';
+import { If } from 'components/If/If';
+import { normalize } from 'themes/Metrics';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 interface Props {
   name: string;
@@ -9,7 +9,7 @@ interface Props {
   version?: string;
 }
 export const Feature = (props: Props) => {
-  const {name, icon, version} = props;
+  const { name, icon, version } = props;
   return (
     <View style={styles.container}>
       <Icon name={icon} style={styles.iconContainer} size={24} />
