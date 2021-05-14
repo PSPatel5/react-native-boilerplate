@@ -1,11 +1,11 @@
 // import {Feature} from 'components/Feature/Feature';
-import {Feature} from 'components/Feature/Feature';
+import { Feature } from 'components/Feature/Feature';
 import React from 'react';
-import {FlatList, Image, Platform, StyleSheet, Text} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import { FlatList, Image, Platform, StyleSheet, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Images from 'themes/Images';
 // import Images from 'themes/Images';
-import {normalize, screenHeight} from 'themes/Metrics';
+import { normalize, screenHeight } from 'themes/Metrics';
 
 const featuresList = [
   {
@@ -19,14 +19,19 @@ const featuresList = [
     version: 'v4.2',
   },
   {
-    icon: 'emoticon-excited-outline',
-    name: 'RN-Vector-icons',
-    version: 'v8.1',
-  },
-  {
     icon: 'map-marker-path',
     name: 'React Navigation',
     version: 'v5.9',
+  },
+  {
+    icon: 'access-point-network',
+    name: 'Axios',
+    version: 'v0.21',
+  },
+  {
+    icon: 'emoticon-excited-outline',
+    name: 'RN-Vector-icons',
+    version: 'v8.1',
   },
 ];
 
@@ -38,8 +43,8 @@ export const Info = () => {
       <FlatList
         data={featuresList}
         numColumns={2}
-        keyExtractor={item => item.name}
-        renderItem={({item}) => <Feature {...item} />}
+        keyExtractor={(item) => item.name}
+        renderItem={({ item }) => <Feature {...item} />}
       />
     </SafeAreaView>
   );
@@ -48,7 +53,7 @@ export const Info = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: Platform.select({android: 40}),
+    marginTop: Platform.select({ android: 40 }),
     paddingHorizontal: normalize(4),
   },
   image: {
