@@ -1,7 +1,7 @@
 // import {Feature} from 'components/Feature/Feature';
 import {Feature} from 'components/Feature/Feature';
 import React from 'react';
-import {FlatList, Image, StyleSheet, Text} from 'react-native';
+import {FlatList, Image, Platform, StyleSheet, Text} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Images from 'themes/Images';
 // import Images from 'themes/Images';
@@ -48,6 +48,7 @@ export const Info = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: Platform.select({android: 40}),
     paddingHorizontal: normalize(4),
   },
   image: {
