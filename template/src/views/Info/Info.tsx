@@ -9,19 +9,24 @@ import {normalize, screenHeight} from 'themes/Metrics';
 
 const featuresList = [
   {
-    icon: '',
-    name: 'RN-Vector-icons',
-    version: 'v5.0',
+    icon: 'react',
+    name: 'React Native',
+    version: 'v0.64.1',
   },
   {
-    icon: '',
-    name: 'React Navigation',
-    version: 'v5.5',
-  },
-  {
-    icon: '',
+    icon: 'language-typescript',
     name: 'Typescript',
-    version: 'v3.0',
+    version: 'v4.2',
+  },
+  {
+    icon: 'emoticon-excited-outline',
+    name: 'RN-Vector-icons',
+    version: 'v8.1',
+  },
+  {
+    icon: 'map-marker-path',
+    name: 'React Navigation',
+    version: 'v5.9',
   },
 ];
 
@@ -43,7 +48,7 @@ export const Info = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: normalize(12),
+    paddingHorizontal: normalize(4),
   },
   image: {
     resizeMode: 'contain',
