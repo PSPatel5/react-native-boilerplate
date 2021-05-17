@@ -33,6 +33,11 @@ const featuresList = [
     name: 'RN-Vector-icons',
     version: 'v8.1',
   },
+  {
+    icon: 'database',
+    name: 'AsyncStorage',
+    version: 'v1.15',
+  },
 ];
 
 export const Info = () => {

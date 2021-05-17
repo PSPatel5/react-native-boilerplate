@@ -1,8 +1,8 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {Info} from 'views/Info';
-import {navigationRef} from 'services/NavigationService';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Info } from 'views/Info';
+import { navigationRef } from 'services/NavigationService';
 const Stack = createStackNavigator();
 export type appThemes = 'System' | 'Day-Night' | 'Light' | 'Dark';
 export const AppNavigator = () => {

@@ -1,4 +1,5 @@
-import axios, {CancelTokenSource} from 'axios';
+import axios, { CancelTokenSource } from 'axios';
+import { getAccessToken } from './AsyncStorageService';
 class CancelToken {
   source: any;
   constructor(initialValue: CancelTokenSource) {
@@ -15,7 +16,7 @@ class CancelToken {
   }
 }
 const cancelSource = new CancelToken(axios.CancelToken.source());
-
+const AUTHORIZATION = 'AUTHORIZATION';
 const axiosInstance = axios.create({
   baseURL: '',
   headers: {
@@ -25,13 +26,13 @@ const axiosInstance = axios.create({
 });
 
 axiosInstance.interceptors.response.use(
-  response => response.data,
-  error => error,
+  (response) => response.data,
+  (error) => error,
 );
-axiosInstance.interceptors.request.use(async config => {
+axiosInstance.interceptors.request.use(async (config) => {
   //   config.baseURL = await getBaseUrl();
   config.cancelToken = cancelSource.getSource().token;
-  //   config.headers[AUTHORIZATION] = await asyncStorageService.getAccessToken();
+  config.headers[AUTHORIZATION] = await getAccessToken();
   return config;
 });
 
@@ -39,9 +40,9 @@ export default class HTTPService {
   static get(url: string, params: any = null): Promise<any> {
     return new Promise((resolve, reject) => {
       axiosInstance
-        .get(url, {params: params})
-        .then(response => resolve(response))
-        .catch(error => reject(error));
+        .get(url, { params: params })
+        .then((response) => resolve(response))
+        .catch((error) => reject(error));
     });
   }
 
@@ -49,8 +50,8 @@ export default class HTTPService {
     return new Promise((resolve, reject) => {
       axiosInstance
         .put(url, body)
-        .then(response => resolve(response))
-        .catch(error => reject(error));
+        .then((response) => resolve(response))
+        .catch((error) => reject(error));
     });
   }
 
@@ -58,17 +59,17 @@ export default class HTTPService {
     return new Promise((resolve, reject) => {
       axiosInstance
         .post(url, body)
-        .then(response => resolve(response))
-        .catch(error => reject(error));
+        .then((response) => resolve(response))
+        .catch((error) => reject(error));
     });
   }
 
   static delete(url: string, body: any): Promise<any> {
     return new Promise((resolve, reject) => {
       axiosInstance
-        .delete(url, {data: body})
-        .then(response => resolve(response))
-        .catch(error => reject(error));
+        .delete(url, { data: body })
+        .then((response) => resolve(response))
+        .catch((error) => reject(error));
     });
   }
 
