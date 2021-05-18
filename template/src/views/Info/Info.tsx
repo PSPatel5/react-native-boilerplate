@@ -38,6 +38,16 @@ const featuresList = [
     name: 'AsyncStorage',
     version: 'v1.15',
   },
+  {
+    icon: 'state-machine',
+    name: 'Redux',
+    version: 'v4.1',
+  },
+  {
+    icon: 'middleware',
+    name: 'Redux-Thunk',
+    version: 'v2.3',
+  },
 ];
 
 export const Info = () => {
