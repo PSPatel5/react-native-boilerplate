@@ -1,10 +1,8 @@
-// import {Feature} from 'components/Feature/Feature';
-import { Feature } from 'components/Feature/Feature';
 import React from 'react';
+import { Feature } from 'components';
 import { FlatList, Image, Platform, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Images from 'themes/Images';
-// import Images from 'themes/Images';
 import { normalize, screenHeight } from 'themes/Metrics';
 
 const featuresList = [

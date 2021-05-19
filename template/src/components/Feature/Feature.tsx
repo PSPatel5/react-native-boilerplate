@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import { If } from 'components/If/If';
+import { If } from 'components';
 import { normalize } from 'themes/Metrics';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 interface Props {
