@@ -89,3 +89,8 @@ Assuming you have all the requirements installed, you can run the project by run
 
 - `yarn start` to start the metro bundler, in a dedicated terminal
 - `yarn <platform>` to run the _platform_ application (remember to start a simulator or connect a device)
+
+## Roadmap
+
+- To include Theme support.
+- Add post init script to remove/add new functionalities.
