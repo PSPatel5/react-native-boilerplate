@@ -18,13 +18,13 @@ Follow instructions for your given `development OS` and `target OS`.
 
 ## Boilerplate Highlights
 
-some of the key highlights of this boilerplate is as below:
+Some of the key highlights of this boilerplate is as below:
 
 #### Core
 
 - [React Native](https://github.com/facebook/react-nativee) for views.
 - [React Navigation](https://github.com/react-navigation/react-navigation) handles in-app navigation.
-- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript](https://www.typescriptlang.org/) for adding types to JS files.
 - [Redux](https://github.com/reactjs/redux) manages application state.
 - [React Redux](https://github.com/reactjs/react-redux) to use React-Redux bindings.
 
@@ -92,5 +92,7 @@ Assuming you have all the requirements installed, you can run the project by run
 
 ## Roadmap
 
-- To include Theme support.
+- To Include Theme support.
 - Add post init script to remove/add new functionalities.
+- Publish boilerplate as NPM package.
+- Enhance README.md
