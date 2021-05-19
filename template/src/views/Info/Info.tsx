@@ -46,6 +46,23 @@ const featuresList = [
     name: 'Redux-Thunk',
     version: 'v2.3',
   },
+  {
+    icon: 'clock-outline',
+    name: 'Moment',
+    version: 'v2.29',
+  },
+  {
+    icon: 'directions-fork',
+    name: 'Navigation Service',
+  },
+  {
+    icon: 'help-circle',
+    name: 'Predefined Helpers',
+  },
+  {
+    icon: 'format-wrap-square',
+    name: 'Wrapped components',
+  },
 ];
 
 export const Info = () => {
