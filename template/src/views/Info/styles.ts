@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: 'row',
-    marginVertical: normalize(6),
+    marginVertical: normalize(18),
     width: '100%',
     justifyContent: 'space-evenly',
   },
