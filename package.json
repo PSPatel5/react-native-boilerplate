@@ -1,8 +1,20 @@
 {
   "name": "@pspatel/react-native-boilerplate",
-  "version": "1.1.1",
-  "description": "React Native Template",
+  "version": "1.1.0",
+  "description": "React Native Biolerplate to kick start mobile application with clean architecture.",
   "repository": "git@github.com:Parth-Coditas/react-native-boilerplate.git",
   "author": "Parth Patel <pspatel1068@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Parth-coditas/react-native-boilerplate/issues"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "boilerplate",
+    "react-native",
+    "react-native-template",
+    "typescript",
+    "template"
+  ]
 }
