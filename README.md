@@ -1,4 +1,10 @@
-# Coditas React Native boilerplate
+# React Native boilerplate
+![React Native Boilerplate License](https://img.shields.io/github/license/Parth-coditas/react-native-boilerplate?logo=MIT)
+![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.0-blue)
+![React Native Boilerplate Release](https://img.shields.io/badge/release-may-yellow)
+![React Native Boilerplate Top Language](https://img.shields.io/github/languages/top/Parth-coditas/react-native-boilerplate)
+![React Native Boilerplate TypeScript](https://img.shields.io/badge/language-ts-blue)
+
 
 [![React Native](./.github/react.png)](https://github.com/facebook/react-native)
 [![TypeScript](./.github/typescript.png)](https://www.typescriptlang.org/)
@@ -79,9 +85,9 @@ Some of the key highlights of this boilerplate is as below:
 To create a new project using the boilerplate simply run :
 
 ```bash
+
 $ npx react-native init MyApp --template @pspatel/react-native-boilerplate
-or
-$ npx react-native init MyApp --template https://github.com/Parth-coditas/react-native-boilerplate
+
 ```
 
 Assuming you have all the requirements installed, you can run the project by running:
@@ -92,6 +98,5 @@ Assuming you have all the requirements installed, you can run the project by run
 ## Roadmap
 
 - To Include Theme support.
-- Add post init script to remove/add new functionalities.
-- Publish boilerplate as NPM package [Done].
+- Add post init script.
 - Enhance README.md
