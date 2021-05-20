@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from 'react-native';
-import { normalize, screenHeight } from 'themes';
+import { Colors, normalize, screenHeight } from 'themes';
 
 export const styles = StyleSheet.create({
   container: {
@@ -24,5 +24,14 @@ export const styles = StyleSheet.create({
     textAlign: 'left',
     fontSize: normalize(13),
     lineHeight: normalize(17),
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    marginVertical: normalize(6),
+    width: '100%',
+    justifyContent: 'space-evenly',
+  },
+  titleStyle: {
+    color: Colors.white,
   },
 });
