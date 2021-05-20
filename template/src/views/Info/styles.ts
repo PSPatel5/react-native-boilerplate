@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from 'react-native';
-import { normalize, screenHeight } from 'themes/Metrics';
+import { normalize, screenHeight } from 'themes';
 
 export const styles = StyleSheet.create({
   container: {

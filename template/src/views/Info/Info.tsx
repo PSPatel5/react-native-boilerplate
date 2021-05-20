@@ -1,8 +1,8 @@
 import React from 'react';
-import { Feature } from 'components';
 import { FlatList, Image, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Images from 'themes/Images';
+import { Feature } from 'components';
+import { Images } from 'themes';
 import { featuresList } from 'constants/FeatureList';
 import { styles } from './styles';
 
