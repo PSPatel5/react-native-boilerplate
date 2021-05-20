@@ -93,5 +93,5 @@ Assuming you have all the requirements installed, you can run the project by run
 
 - To Include Theme support.
 - Add post init script to remove/add new functionalities.
-- Publish boilerplate as NPM package.
+- Publish boilerplate as NPM package [Done].
 - Enhance README.md
