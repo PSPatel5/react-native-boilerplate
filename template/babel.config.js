@@ -7,15 +7,16 @@ module.exports = {
         root: ['./src'],
         extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
         alias: {
-          "assets": "./src/assets",
-          "components": "./src/components",
-          "navigation": "./src/navigation",
-          "services": "./src/services",
-          "themes": "./src/themes",
-          "utils": "./src/utils",
-          "views": "./src/views",
-        }
-      }
-    ]
-  ]
+          assets: './src/assets',
+          components: './src/components',
+          constants: './src/constants',
+          navigation: './src/navigation',
+          services: './src/services',
+          themes: './src/themes',
+          utils: './src/utils',
+          views: './src/views',
+        },
+      },
+    ],
+  ],
 };
