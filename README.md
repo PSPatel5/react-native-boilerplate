@@ -72,9 +72,6 @@ Some of the key highlights of this boilerplate is as below:
 ├── index.js                        # Initial file to run the app.
 ├── package.json                    # Package configuration.
 ├── tsconfig.json                   # TypeScript transpiler configuration.
-├── tslint.json                     # Configures tslint.
-├── README.md                       # This file.
-
 ```
 
 ## Start
@@ -82,6 +79,8 @@ Some of the key highlights of this boilerplate is as below:
 To create a new project using the boilerplate simply run :
 
 ```bash
+$ npx react-native init MyApp --template @pspatel/react-native-boilerplate
+or
 $ npx react-native init MyApp --template https://github.com/Parth-coditas/react-native-boilerplate
 ```
 
