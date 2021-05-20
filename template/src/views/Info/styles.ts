@@ -18,4 +18,11 @@ export const styles = StyleSheet.create({
     lineHeight: normalize(16),
     textAlign: 'center',
   },
+  smallText: {
+    marginVertical: normalize(14),
+    marginStart: normalize(12),
+    textAlign: 'left',
+    fontSize: normalize(13),
+    lineHeight: normalize(17),
+  },
 });
