@@ -1,6 +1,15 @@
 import React from 'react';
-import { If } from 'components/If/If';
-import { ActivityIndicator, Pressable, StyleProp, Text, TextStyle, ViewStyle } from 'react-native';
+import { If } from 'components';
+import {
+  ActivityIndicator,
+  Pressable,
+  StyleProp,
+  Text,
+  TextStyle,
+  ViewStyle,
+} from 'react-native';
+import { styles } from './styles';
+import Colors from 'themes/Colors';
 interface Props {
   onPress: () => void;
   children?: React.ReactNode;
@@ -13,16 +22,31 @@ interface Props {
 }
 
 export const Button = (props: Props) => {
-  const { title, titleStyle, onPress, buttonStyle, children, disabled, loading, loadingColor } = props;
+  const {
+    title,
+    titleStyle,
+    buttonStyle,
+    children,
+    disabled,
+    loading,
+    loadingColor = Colors.white,
+    onPress,
+  } = props;
+  const buttonStyleWrapper = disabled
+    ? [styles.container, styles.disabledButton, buttonStyle]
+    : [styles.container, buttonStyle];
   return (
-    <Pressable onPress={onPress} disabled={disabled || loading} style={buttonStyle}>
+    <Pressable
+      onPress={onPress}
+      disabled={disabled || loading}
+      style={buttonStyleWrapper}>
       <If condition={Boolean(loading)}>
         <ActivityIndicator color={loadingColor} />
       </If>
-      <If condition={Boolean(title)}>
-        <Text style={titleStyle}>{title}</Text>
+      <If condition={Boolean(!loading && title)}>
+        <Text style={[styles.titleStyle, titleStyle]}>{title}</Text>
       </If>
-      <If condition={Boolean(children)}>{children}</If>
+      <If condition={Boolean(!loading && children)}>{children}</If>
     </Pressable>
   );
 };

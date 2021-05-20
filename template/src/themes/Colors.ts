@@ -1,4 +1,4 @@
-import {DefaultTheme, DarkTheme} from '@react-navigation/native';
+import { DefaultTheme, DarkTheme } from '@react-navigation/native';
 const Colors = {
   red: '#ff0000',
   black: '#000000',
@@ -9,6 +9,7 @@ const Colors = {
   darkBackground: '#1b262c',
   lightBackgroud: '#ffffff',
   darkPrimary: '#0f4c75',
+  primary: '#0597fa',
   grey: '#5a5a5a',
   lightGrey: '#7a7a7a',
 };
