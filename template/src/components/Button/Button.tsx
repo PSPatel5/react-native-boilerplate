@@ -3,6 +3,7 @@ import { If } from 'components';
 import {
   ActivityIndicator,
   Pressable,
+  PressableAndroidRippleConfig,
   StyleProp,
   Text,
   TextStyle,
@@ -15,6 +16,7 @@ interface Props {
   children?: React.ReactNode;
   title?: string;
   titleStyle?: StyleProp<TextStyle>;
+  androidRipple?: PressableAndroidRippleConfig;
   buttonStyle?: StyleProp<ViewStyle>;
   disabled?: boolean;
   loading?: boolean;
@@ -30,6 +32,7 @@ export const Button = (props: Props) => {
     disabled,
     loading,
     loadingColor = Colors.white,
+    androidRipple,
     onPress,
   } = props;
   const buttonStyleWrapper = disabled
@@ -39,6 +42,7 @@ export const Button = (props: Props) => {
     <Pressable
       onPress={onPress}
       disabled={disabled || loading}
+      android_ripple={androidRipple}
       style={buttonStyleWrapper}>
       <If condition={Boolean(loading)}>
         <ActivityIndicator color={loadingColor} />
