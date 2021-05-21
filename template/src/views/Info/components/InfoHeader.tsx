@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
     fontSize: normalize(15),
     lineHeight: normalize(16),
     textAlign: 'center',
+    fontWeight: '700',
   },
   smallText: {
     marginVertical: normalize(14),
