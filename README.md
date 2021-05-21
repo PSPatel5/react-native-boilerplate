@@ -1,6 +1,6 @@
 # React Native boilerplate
 ![React Native Boilerplate License](https://img.shields.io/github/license/Parth-coditas/react-native-boilerplate?logo=MIT)
-![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.0-blue)
+![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.1.2-blue)
 ![React Native Boilerplate Release](https://img.shields.io/badge/release-may-yellow)
 ![React Native Boilerplate Top Language](https://img.shields.io/github/languages/top/Parth-coditas/react-native-boilerplate)
 ![React Native Boilerplate TypeScript](https://img.shields.io/badge/language-ts-blue)
