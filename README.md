@@ -1,10 +1,10 @@
 # React Native boilerplate
+
 ![React Native Boilerplate License](https://img.shields.io/github/license/Parth-coditas/react-native-boilerplate?logo=MIT)
 ![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.0-blue)
 ![React Native Boilerplate Release](https://img.shields.io/badge/release-may-yellow)
 ![React Native Boilerplate Top Language](https://img.shields.io/github/languages/top/Parth-coditas/react-native-boilerplate)
 ![React Native Boilerplate TypeScript](https://img.shields.io/badge/language-ts-blue)
-
 
 [![React Native](./.github/react.png)](https://github.com/facebook/react-native)
 [![TypeScript](./.github/typescript.png)](https://www.typescriptlang.org/)
@@ -13,6 +13,8 @@
 This project is a [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application with a cleaner architecture.
 
 The boilerplate provides **an optimized architecture for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic.
+
+[![Boilplate Screenshot](./.github/boilerplate-screenshot.jpg)](https://github.com/Parth-coditas/react-native-boilerplate/tree/main/.github/boilerplate-screenshot.jpg)
 
 ## Requirements
 
