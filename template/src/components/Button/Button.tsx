@@ -3,20 +3,19 @@ import { If } from 'components';
 import {
   ActivityIndicator,
   Pressable,
-  PressableAndroidRippleConfig,
+  PressableProps,
   StyleProp,
   Text,
   TextStyle,
   ViewStyle,
 } from 'react-native';
 import { styles } from './styles';
-import Colors from 'themes/Colors';
-interface Props {
+import { Colors } from 'themes';
+interface Props extends PressableProps {
   onPress: () => void;
   children?: React.ReactNode;
   title?: string;
   titleStyle?: StyleProp<TextStyle>;
-  androidRipple?: PressableAndroidRippleConfig;
   buttonStyle?: StyleProp<ViewStyle>;
   disabled?: boolean;
   loading?: boolean;
@@ -32,8 +31,8 @@ export const Button = (props: Props) => {
     disabled,
     loading,
     loadingColor = Colors.white,
-    androidRipple,
     onPress,
+    ...restButtonProps
   } = props;
   const buttonStyleWrapper = disabled
     ? [styles.container, styles.disabledButton, buttonStyle]
@@ -42,8 +41,8 @@ export const Button = (props: Props) => {
     <Pressable
       onPress={onPress}
       disabled={disabled || loading}
-      android_ripple={androidRipple}
-      style={buttonStyleWrapper}>
+      style={buttonStyleWrapper}
+      {...restButtonProps}>
       <If condition={Boolean(loading)}>
         <ActivityIndicator color={loadingColor} />
       </If>
