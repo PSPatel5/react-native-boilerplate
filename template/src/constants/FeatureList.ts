@@ -2,27 +2,27 @@ export const featuresList = [
   {
     icon: 'react',
     name: 'React Native',
-    version: 'v0.64.1',
+    version: 'v0.66.3',
   },
   {
     icon: 'language-typescript',
     name: 'Typescript',
-    version: 'v4.2',
+    version: 'v4.4',
   },
   {
     icon: 'map-marker-path',
     name: 'React Navigation',
-    version: 'v5.9',
+    version: 'v6.0',
   },
   {
     icon: 'access-point-network',
     name: 'Axios',
-    version: 'v0.21',
+    version: 'v0.24',
   },
   {
     icon: 'emoticon-excited-outline',
     name: 'RN-Vector-icons',
-    version: 'v8.1',
+    version: 'v9.0',
   },
   {
     icon: 'database',
@@ -37,7 +37,7 @@ export const featuresList = [
   {
     icon: 'middleware',
     name: 'Redux-Thunk',
-    version: 'v2.3',
+    version: 'v2.4',
   },
   {
     icon: 'clock-outline',
