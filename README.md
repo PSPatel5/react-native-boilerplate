@@ -103,3 +103,10 @@ Assuming you have all the requirements installed, you can run the project by run
 - Replace Asyncstorage with MMKV
 - Add post init script.
 - Enhance README.md
+
+
+<meta property='og:title' content='React Native Boilerplate'/>
+<meta property='og:image' content='//github.com/Parth-coditas/react-native-boilerplate/tree/main/.github/boilerplate-screenshot.jpg'/>
+<meta property='og:description' content='A React native boilerplate based on clean architecture and predefined helpler functions.'/>
+<meta property='og:url' content='//github.com/Parth-coditas/react-native-boilerplate' />
+
