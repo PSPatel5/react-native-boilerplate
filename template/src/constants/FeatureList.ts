@@ -2,12 +2,12 @@ export const featuresList = [
   {
     icon: 'react',
     name: 'React Native',
-    version: 'v0.66.3',
+    version: 'v0.67.1',
   },
   {
     icon: 'language-typescript',
     name: 'Typescript',
-    version: 'v4.4',
+    version: 'v4.5',
   },
   {
     icon: 'map-marker-path',

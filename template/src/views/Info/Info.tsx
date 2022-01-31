@@ -9,7 +9,8 @@ import { InfoHeader } from './components/InfoHeader';
 
 export const Info = () => {
   return (
-    <View style={styles.container}>
+    <View
+      style={[styles.container, { backgroundColor: Colors.darkBackground }]}>
       <StatusBar backgroundColor={Colors.transparent} barStyle="dark-content" />
       <FlatList
         data={featuresList}
