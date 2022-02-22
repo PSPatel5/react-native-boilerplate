@@ -2,7 +2,7 @@ export const featuresList = [
   {
     icon: 'react',
     name: 'React Native',
-    version: 'v0.67.1',
+    version: 'v0.67.2',
   },
   {
     icon: 'language-typescript',
@@ -17,7 +17,7 @@ export const featuresList = [
   {
     icon: 'access-point-network',
     name: 'Axios',
-    version: 'v0.24',
+    version: 'v0.26',
   },
   {
     icon: 'emoticon-excited-outline',
@@ -41,8 +41,8 @@ export const featuresList = [
   },
   {
     icon: 'clock-outline',
-    name: 'Moment',
-    version: 'v2.29',
+    name: 'Day.js',
+    version: 'v1.10',
   },
   {
     icon: 'directions-fork',
