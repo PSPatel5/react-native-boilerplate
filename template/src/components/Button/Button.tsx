@@ -1,5 +1,4 @@
 import React from 'react';
-import { If } from 'components';
 import {
   ActivityIndicator,
   Pressable,
@@ -10,7 +9,9 @@ import {
   ViewStyle,
 } from 'react-native';
 import { styles } from './styles';
-import { Colors } from 'themes';
+import { If } from '@/components';
+import { Colors } from '@/themes';
+
 interface Props extends PressableProps {
   onPress: () => void;
   children?: React.ReactNode;

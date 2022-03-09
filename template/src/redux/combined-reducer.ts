@@ -1,11 +1,13 @@
+import { IState } from '@/utils/Interfaces';
 import { combineReducers, Reducer } from 'redux';
-import { exampleReducer } from './Basic/Reducer';
-import { ReduxTypes } from './ReduxTypes';
+import { themeReducer } from './theme/reducer';
+import { ReduxTypes } from './types';
+
 export const reducers: Reducer<any> = combineReducers({
-  example: exampleReducer,
+  theme: themeReducer,
 });
 
-const rootReducer = (state: any, action: any) => {
+const rootReducer = (state: IState | undefined, action: any) => {
   if (action.type === ReduxTypes.LOG_OUT) {
     state = undefined;
   }

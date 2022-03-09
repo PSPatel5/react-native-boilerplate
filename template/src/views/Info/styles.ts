@@ -1,5 +1,5 @@
-import { Platform, StyleSheet } from 'react-native';
-import { Colors, normalize, screenHeight } from 'themes';
+import { StyleSheet } from 'react-native';
+import { normalize } from 'themes';
 
 export const styles = StyleSheet.create({
   container: {

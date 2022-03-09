@@ -1,13 +1,17 @@
 import React, { Fragment } from 'react';
 import { Image, Platform, StyleSheet, Text } from 'react-native';
+import { useTheme } from '@react-navigation/native';
 import { Images, normalize, screenHeight } from 'themes';
 
 export const InfoHeader = () => {
+  const { colors } = useTheme();
   return (
     <Fragment>
       <Image source={Images.BoilerPlate} style={styles.image} />
-      <Text style={styles.text}>React Native Biolerplate</Text>
-      <Text style={styles.smallText}>
+      <Text style={[styles.text, { color: colors.text }]}>
+        React Native Biolerplate
+      </Text>
+      <Text style={[styles.smallText, { color: colors.text }]}>
         This boilerplate can be used to kick start mobile application with a
         clean architecture. Here are few of the key functionalities are listed
         below

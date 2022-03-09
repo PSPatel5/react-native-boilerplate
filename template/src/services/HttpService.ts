@@ -1,5 +1,5 @@
 import axios, { CancelTokenSource } from 'axios';
-import { getAccessToken } from './AsyncStorageService';
+import { getAccessToken } from './StorageService';
 class CancelToken {
   source: any;
   constructor(initialValue: CancelTokenSource) {
@@ -15,8 +15,11 @@ class CancelToken {
     this.source.cancel(cancelMessage);
   }
 }
+
 const cancelSource = new CancelToken(axios.CancelToken.source());
+
 const AUTHORIZATION = 'AUTHORIZATION';
+
 const axiosInstance = axios.create({
   baseURL: '',
   headers: {
@@ -25,17 +28,18 @@ const axiosInstance = axios.create({
   timeout: 20000,
 });
 
+// For Request Interceptor
+axiosInstance.interceptors.request.use((config) => {
+  config.cancelToken = cancelSource.getSource().token;
+  if (config.headers) config.headers[AUTHORIZATION] = getAccessToken();
+  return config;
+});
+
+// For Response Interceptor
 axiosInstance.interceptors.response.use(
   (response) => response.data,
   (error) => error,
 );
-axiosInstance.interceptors.request.use(async (config) => {
-  //   config.baseURL = await getBaseUrl();
-  config.cancelToken = cancelSource.getSource().token;
-  config.headers[AUTHORIZATION] = await getAccessToken();
-  return config;
-});
-
 export default class HTTPService {
   static get(url: string, params: any = null): Promise<any> {
     return new Promise((resolve, reject) => {

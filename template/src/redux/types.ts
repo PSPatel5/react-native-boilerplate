@@ -1,4 +1,4 @@
 export const ReduxTypes = {
-  EXAMPLE: 'example',
+  SET_THEME: 'set_theme',
   LOG_OUT: 'logout',
 };
