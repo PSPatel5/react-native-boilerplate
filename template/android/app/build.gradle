@@ -131,7 +131,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.rnboilerplate"
+        applicationId "com.reactnativeboilerplate"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -156,7 +156,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
-             if (nativeArchitectures) {
+            if (nativeArchitectures) {
                 ndk {
                     abiFilters nativeArchitectures.split(',')
                 }
@@ -225,7 +225,3 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
-project.ext.vectoricons = [
-    iconFontNames: ['AntDesign.ttf', 'EvilIcons.ttf', 'FontAwesome.ttf','FontAwesome5_Brands.ttf','Ionicons.ttf','MaterialIcons.ttf','MaterialCommunityIcons.ttf']
-]
-apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
