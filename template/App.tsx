@@ -1,16 +1,8 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, useColorScheme } from 'react-native';
-import { Home } from '@/screens/home/home';
+import { AppNavigator } from '@/navigation/app.navigation';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  return (
-    <SafeAreaView>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Home />
-    </SafeAreaView>
-  );
+  return <AppNavigator />;
 };
 
 export default App;
