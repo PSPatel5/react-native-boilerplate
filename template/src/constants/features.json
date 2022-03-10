@@ -1,0 +1,60 @@
+[
+  {
+    "icon": "react",
+    "name": "React Native",
+    "version": "v0.67.3"
+  },
+  {
+    "icon": "language-typescript",
+    "name": "Typescript",
+    "version": "v4.6"
+  },
+  {
+    "icon": "map-marker-path",
+    "name": "React Navigation",
+    "version": "v6.0"
+  },
+  {
+    "icon": "access-point-network",
+    "name": "Axios",
+    "version": "v0.26"
+  },
+  {
+    "icon": "emoticon-excited-outline",
+    "name": "RN-Vector-icons",
+    "version": "v9.0"
+  },
+  {
+    "icon": "database",
+    "name": "MMKV",
+    "version": "v2.1"
+  },
+  {
+    "icon": "state-machine",
+    "name": "Redux",
+    "version": "v4.1"
+  },
+  {
+    "icon": "middleware",
+    "name": "Redux-Thunk",
+    "version": "v2.4"
+  },
+  {
+    "icon": "clock-outline",
+    "name": "Day.js",
+    "version": "v1.10"
+  },
+  {
+    "icon": "directions-fork",
+    "name": "Navigation Service"
+  },
+  {
+    "icon": "help-circle",
+    "name": "Predefined Helpers"
+  },
+  {
+    "icon": "lightbulb-on",
+    "name": "Theme",
+    "isThemeButton": true
+  }
+]
