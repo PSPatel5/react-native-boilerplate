@@ -1,3 +1,3 @@
 export const Images = {
-  // BoilerPlate: require('assets/Images/react-icon.png'),
+  REACT_LOGO: require('@/assets/images/react-icon.png'),
 };

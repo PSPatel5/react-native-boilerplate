@@ -1,12 +1,13 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { Button } from '@/components';
+import { View } from 'react-native';
+import { Header } from './components/header';
+import { Footer } from './components/footer';
 
 export const Home = () => {
   return (
     <View>
-      <Text>Hello</Text>
-      <Button title={'Hello'} onPress={() => {}} />
+      <Header />
+      <Footer />
     </View>
   );
 };
