@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Button } from '@/components';
 import { normalize } from '@/themes';
 import { IAppDispatch, IRootState } from '@/redux/store';
@@ -15,7 +16,7 @@ interface Props {
 }
 
 export const Feature = (props: Props) => {
-  const { name, version, isThemeButton } = props;
+  const { name, version, icon, isThemeButton } = props;
   const { colors } = useTheme();
   const dispatch = useDispatch<IAppDispatch>();
   const theme = useSelector((state: IRootState) => state.theme.currentTheme);
@@ -32,6 +33,12 @@ export const Feature = (props: Props) => {
         android_ripple={{ color: colors.primary }}
         onPress={handleThemeChange}
         style={styles.container}>
+        <Icon
+          name={icon}
+          style={styles.iconContainer}
+          size={24}
+          color={colors.text}
+        />
         <Text style={[styles.featureName, { color: colors.text }]}>
           {`Theme ( ${theme} )`}
         </Text>
@@ -41,6 +48,12 @@ export const Feature = (props: Props) => {
 
   return (
     <View style={styles.container}>
+      <Icon
+        name={icon}
+        style={styles.iconContainer}
+        size={24}
+        color={colors.text}
+      />
       <Text style={[styles.featureName, { color: colors.text }]}>{name}</Text>
       {version && (
         <Text style={[styles.versionText, { color: colors.text }]}>
@@ -66,7 +79,8 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     width: 24,
-    marginHorizontal: 4,
+    marginStart: 12,
+    marginEnd: 6,
     paddingVertical: 12,
   },
   versionText: {
