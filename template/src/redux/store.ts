@@ -1,18 +1,10 @@
-import { applyMiddleware, compose, createStore } from 'redux';
-import thunk from 'redux-thunk';
-import { rootReducer } from './combined-reducer';
+import { configureStore } from '@reduxjs/toolkit';
+import { rootReducer } from './root.reducer';
 
-const createAppropriateStore = (rootReducer: any) => {
-  const middleware = [];
-  const enhancers = [];
+export const store = configureStore({
+  reducer: rootReducer,
+  devTools: process.env.NODE_ENV !== 'production',
+});
 
-  // Connect the thunk to the redux store
-  middleware.push(thunk);
-
-  enhancers.push(applyMiddleware(...middleware));
-  const store = createStore(rootReducer, compose(...enhancers));
-
-  return store;
-};
-
-export const ReduxStore = createAppropriateStore(rootReducer);
+export type IAppDispatch = typeof store.dispatch;
+export type IRootState = ReturnType<typeof rootReducer>;

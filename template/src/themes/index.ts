@@ -1,3 +1,3 @@
-export * from './Colors';
-export * from './Images';
-export * from './Metrics';
+export * from './colors';
+export * from './images';
+export * from './metrics';

@@ -1,9 +1,9 @@
 # React Native boilerplate
 
-![React Native Boilerplate License](https://img.shields.io/github/license/Parth-coditas/react-native-boilerplate?logo=MIT)
-![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.2.0-blue)
-![React Native Boilerplate Release](https://img.shields.io/badge/release-may-yellow)
-![React Native Boilerplate Top Language](https://img.shields.io/github/languages/top/Parth-coditas/react-native-boilerplate)
+![React Native Boilerplate License](https://img.shields.io/github/license/PSPatel5/react-native-boilerplate?logo=MIT)
+![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.3.0-blue)
+![React Native Boilerplate Release](https://img.shields.io/badge/release-march-yellow)
+![React Native Boilerplate Top Language](https://img.shields.io/github/languages/top/PSPatel5/react-native-boilerplate)
 ![React Native Boilerplate TypeScript](https://img.shields.io/badge/language-ts-blue)
 
 [![React Native](./.github/react.png)](https://github.com/facebook/react-native)
@@ -14,7 +14,7 @@ This project is a [React Native](https://facebook.github.io/react-native/) boile
 
 The boilerplate provides **an optimized architecture for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic.
 
-[![Boilplate Screenshot](./.github/boilerplate-screenshot.jpg)](https://github.com/Parth-coditas/react-native-boilerplate/tree/main/.github/boilerplate-screenshot.jpg)
+[![Boilplate Screenshot](./.github/boilerplate-screenshot.jpg)](https://github.com/PSPatel5/react-native-boilerplate/tree/main/.github/boilerplate-screenshot.jpg)
 
 ## Requirements
 
@@ -38,11 +38,9 @@ Some of the key highlights of this boilerplate is as below:
 
 #### Utilities
 
-- [Redux Thunk](https://github.com/reduxjs/redux-thunk) makes side effects (i.e. asynchronous things like data fetching) in React/Redux applications easier and better.
 - [Axios](https://github.com/axios/axios) for API calls.
-- [HTTP Service](https://github.com/Parth-coditas/react-native-boilerplate/blob/main/template/src/services/HttpService.ts) Base service class for API calls.
-- [Navigation Service](https://github.com/Parth-coditas/react-native-boilerplate/blob/main/template/src/services/NavigationService.ts) Navigation Service class to navigate without navigation props.
-- [Button Wrapper](https://github.com/Parth-coditas/react-native-boilerplate/blob/main/template/src/components/Button/Button.tsx) Custom button component that extends Pressable and enhances it with various helpful props.
+- [HTTP Service](https://github.com/PSPatel5/react-native-boilerplate/blob/main/template/src/services/http.service.ts) Base service class for API calls.
+- [Navigation Service](https://github.com/PSPatel5/react-native-boilerplate/blob/main/template/src/services/navigation.service.ts) Navigation Service class to navigate without navigation props.
 
 #### Developer Experience
 
@@ -60,20 +58,18 @@ Some of the key highlights of this boilerplate is as below:
 ├── resources                       # Font files that are copied to native folder when building.
 ├── src                             # Source code.
 |   ├── assets                      # Container folder for asset files.
-│   │ ├── Images                    # Container folder for image files.
+│   │ ├── images                    # Container folder for image files.
 │   ├── components                  # Container folder for reusable components through out the app.
 │   ├── navigation                  # Navigation components and wrappers.
-│   ├── redux-store                 # Container for redux files.
-│   │ ├── any-folder                # Container folder specific redux.
-│   │   ├── Action                  # redux thunk action functions.
-│   │   ├── Reducer                 # Reducer functions for redux
-│   │ ├── index.ts                  # store creation function and related files
-│   │ ├── ReduxTypes.ts             # redux action types constant file
-│   │ ├── RootReducer.ts            # container file for combined reducers
+│   ├── redux                       # Container for redux files.
+│   │ ├── slice                     # Container folder specific redux.
+│   │   ├── x.slice.ts              # Slice file container action,reducer and initial state.
+│   │ ├── store.ts                  # store creation function and related files
+│   │ ├── root.reducer.ts           # container file for combined reducers
+│   ├── screens                     # page like screens containers .
 │   ├── services                    # API call related files and general services related files.
 │   ├── themes                      # Colors,Fonts,Pixel related calculations and constants.
 │   ├── utils                       # Container folder for helper functions.
-│   ├── views                       # page like components/screens containers .
 ├── .gitignore                      # Tells git which files to ignore.
 ├── .prettierrc                     # Rules for prettier linter.
 ├── App.tsx                         # Container file for all layouts.
@@ -99,14 +95,10 @@ Assuming you have all the requirements installed, you can run the project by run
 
 ## Roadmap
 
-- To Include Theme support.
-- Replace Asyncstorage with MMKV
-- Add post init script.
+- Open for next suggestions
 - Enhance README.md
 
-
 <meta property='og:title' content='React Native Boilerplate'/>
-<meta property='og:image' content='//github.com/Parth-coditas/react-native-boilerplate/tree/main/.github/boilerplate-screenshot.jpg'/>
+<meta property='og:image' content='//github.com/PSPatel5/react-native-boilerplate/tree/main/.github/boilerplate-screenshot.jpg'/>
 <meta property='og:description' content='A React native boilerplate based on clean architecture and predefined helpler functions.'/>
-<meta property='og:url' content='//github.com/Parth-coditas/react-native-boilerplate' />
-
+<meta property='og:url' content='//github.com/PSPatel5/react-native-boilerplate' />

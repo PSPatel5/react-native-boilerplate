@@ -22,7 +22,7 @@
   {
     "icon": "emoticon-excited-outline",
     "name": "RN-Vector-icons",
-    "version": "v9.0"
+    "version": "v9.1"
   },
   {
     "icon": "database",
@@ -31,13 +31,8 @@
   },
   {
     "icon": "state-machine",
-    "name": "Redux",
-    "version": "v4.1"
-  },
-  {
-    "icon": "middleware",
-    "name": "Redux-Thunk",
-    "version": "v2.4"
+    "name": "Redux Toolkit",
+    "version": "v1.8"
   },
   {
     "icon": "clock-outline",
@@ -47,10 +42,6 @@
   {
     "icon": "directions-fork",
     "name": "Navigation Service"
-  },
-  {
-    "icon": "help-circle",
-    "name": "Predefined Helpers"
   },
   {
     "icon": "lightbulb-on",
