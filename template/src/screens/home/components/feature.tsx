@@ -1,8 +1,11 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { useTheme } from '@react-navigation/native';
-import { Button } from '@/components/index';
-import { normalize } from '@/themes/index';
+import { useDispatch, useSelector } from 'react-redux';
+import { Button } from '@/components';
+import { normalize } from '@/themes';
+import { IAppDispatch, IRootState } from '@/redux/store';
+import { themeActions } from '@/redux/slice';
 
 interface Props {
   name: string;
@@ -14,14 +17,23 @@ interface Props {
 export const Feature = (props: Props) => {
   const { name, version, isThemeButton } = props;
   const { colors } = useTheme();
+  const dispatch = useDispatch<IAppDispatch>();
+  const theme = useSelector((state: IRootState) => state.theme.currentTheme);
 
-  const handleThemeChange = () => {};
+  const handleThemeChange = () => {
+    const nextTheme =
+      theme === 'System' ? 'Light' : theme === 'Light' ? 'Dark' : 'System';
+    dispatch(themeActions.setTheme(nextTheme));
+  };
 
   if (isThemeButton) {
     return (
-      <Button onPress={handleThemeChange} style={styles.container}>
+      <Button
+        android_ripple={{ color: colors.primary }}
+        onPress={handleThemeChange}
+        style={styles.container}>
         <Text style={[styles.featureName, { color: colors.text }]}>
-          {'Theme ( Auto )'}
+          {`Theme ( ${theme} )`}
         </Text>
       </Button>
     );
