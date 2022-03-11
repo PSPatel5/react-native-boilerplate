@@ -1,6 +1,6 @@
 {
   "name": "@pspatel/react-native-boilerplate",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "React Native Boilerplate to kick start mobile application with clean architecture.",
   "repository": "git@github.com:PSPatel5/react-native-boilerplate.git",
   "author": "Parth Patel <pspatel1068@gmail.com>",

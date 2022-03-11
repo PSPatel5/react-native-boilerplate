@@ -1,7 +1,7 @@
 # React Native boilerplate
 
 ![React Native Boilerplate License](https://img.shields.io/github/license/PSPatel5/react-native-boilerplate?logo=MIT)
-![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.3.0-blue)
+![React Native Boilerplate Version](https://img.shields.io/badge/version-v1.3.1-blue)
 ![React Native Boilerplate Release](https://img.shields.io/badge/release-march-yellow)
 ![React Native Boilerplate Top Language](https://img.shields.io/github/languages/top/PSPatel5/react-native-boilerplate)
 ![React Native Boilerplate TypeScript](https://img.shields.io/badge/language-ts-blue)
@@ -96,7 +96,6 @@ Assuming you have all the requirements installed, you can run the project by run
 ## Roadmap
 
 - Open for next suggestions
-- Enhance README.md
 
 <meta property='og:title' content='React Native Boilerplate'/>
 <meta property='og:image' content='//github.com/PSPatel5/react-native-boilerplate/tree/main/.github/boilerplate-screenshot.jpg'/>
